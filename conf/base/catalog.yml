@@ -1,0 +1,13 @@
+companies:
+  type: pandas.CSVDataset
+  filepath: data/companies.csv
+
+reviews:
+  type: pandas.CSVDataset
+  filepath: data/reviews.csv
+
+sftable:
+  type: src.fennotest.SnowflakeQueryDataset
+  account: enecodev.west-europe.azure
+  query: "SELECT * FROM DATA_MARKETPLACE.AE_ADM.CHANGE_HISTORY LIMIT 10"
+  credentials: snowflake
