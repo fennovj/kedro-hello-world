@@ -8,6 +8,6 @@ reviews:
 
 sftable:
   type: src.fennotest.SnowflakeQueryDataset
-  account: enecodev.west-europe.azure
+  account: "${globals:snowflake_account}"
   query: "SELECT * FROM DATA_MARKETPLACE.AE_ADM.CHANGE_HISTORY LIMIT 10"
   credentials: snowflake

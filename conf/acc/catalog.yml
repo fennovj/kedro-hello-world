@@ -1,5 +1,0 @@
-sftable:
-  type: src.fennotest.SnowflakeQueryDataset
-  account: enecoacc.west-europe.azure
-  query: "SELECT * FROM DATA_MARKETPLACE.AE_ADM.CHANGE_HISTORY LIMIT 10"
-  credentials: snowflake
